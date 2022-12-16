@@ -36,14 +36,14 @@ function App() {
   const mobile=<Body data={Mobile} data1={Dress}/>
   return (
     <>
-    <Router>
+    <Router basename='/simple-react-ecommerce'>
       <div className='pb-24 lg:pb-20'>
       <Header num={header}/>
       </div>
       <Routes>
         <Route path='/product_new' element={<Product_new Product_view={Product_view}/>}></Route>
         <Route path='/cart_page' element={<Cart_page values={cart}/>}></Route>
-        <Route exact path='/' element={mobile}></Route>
+        <Route exact path='/simple-react-ecommerce' element={mobile}></Route>
       </Routes>
     </Router >
     </>
