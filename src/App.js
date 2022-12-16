@@ -36,7 +36,7 @@ function App() {
   const mobile=<Body data={Mobile} data1={Dress}/>
   return (
     <>
-    <Router basename='/simple-react-ecommerce'>
+    <Router>
       <div className='pb-24 lg:pb-20'>
       <Header num={header}/>
       </div>
